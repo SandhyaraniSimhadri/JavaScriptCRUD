@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.todo-item-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.display-none {
+    display: none;
+}
+
+.todo-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.todo-item input[type="text"] {
+    width: 50%;
+}
+
+.mark-complete-button,
+.mark-incomplete-button,
+.update-button,
+.delete-button {
+    padding: 2px 4px;
+    border: none;
+    cursor: pointer;
+    margin-left: 4px;
+    font-size: 12px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.mark-complete-button {
+    background-color: #57bb8a;
+    color: white;
+}
+
+.mark-incomplete-button {
+    background-color: #f9cd5e;
+    color: white;
+}
+
+.update-button {
+    background-color: #3298dc;
+    color: white;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type=text] {
+    width: 260px;
+    height: 26px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 4px;
+    padding-inline-start: 8px;
+}
+
+input[type=text]:focus {
+    border: 1px solid #555;
+}
+
+#add-button {
+    background-color: #1EF309;
+    color: white;
+    border: 1px solid #1EF309;
+    height: 26px;
+    border-radius: 4px;
+}
+
+.error-info {
+    color: #F70303;
+    font-size: 12px;
+    display: none;
+}
